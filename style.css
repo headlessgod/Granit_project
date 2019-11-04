@@ -105,3 +105,20 @@ body {
     font-weight: bold;
     padding: 15px;
 }
+
+
+/* CONTENT STYLE */
+
+
+.main {
+    width: 100%;
+    margin: 0; padding: 0;
+    background: url(img/back.jpeg);
+}
+.main__background {
+    max-width: 940px;
+    margin: auto;
+}
+.main__title {
+    margin: 0;
+}
