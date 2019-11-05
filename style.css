@@ -250,3 +250,63 @@ body {
     font-weight: 100;
     line-height: 22px;
 }
+
+
+/* POPULAR PAGE STYLES */
+
+
+.popular {
+    max-width: 1000px;
+    margin: auto; padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.popular__mainTitle {
+    width: 100%;
+    margin: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.block_one, .block_two, .block_three, .block_four {
+    width: 24%;
+    border: 2px solid #f6f6f6;
+    padding: 10px 0;
+    margin-bottom: 80px;
+}
+.block_one:hover, .block_two:hover, .block_three:hover, .block_four:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+}
+.block_title {
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: underline;
+    margin: 22px 0;
+}
+.block_price {
+    color: #979797;
+    display: inline;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.block_discount {
+    display: inline;
+    font-size: 23px;
+    color: red;
+    margin-left: 15px;
+}
+.block_price_noDiscount {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+.block_button {
+    background: #ffd200;
+    border: none;
+    cursor: pointer;
+    padding: 12px 50px;
+    font-weight: bold;
+    margin: 22px;
+}
