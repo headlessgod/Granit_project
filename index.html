@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Granit</title>
 </head>
 
@@ -128,7 +129,47 @@
             <h2 class="block_price_noDiscount">1 350 р./т</h2>
             <button class="block_button">Купить</button>
         </div>
+        <div class="map__contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="block__contacts"><i class="contacts fa fa-phone" aria-hidden="true"></i>
+                <h3 class="contacts__text">8 800 034-23-34</h3>
+            </div>
+            <div class="block__contacts"><i class="contacts fa fa-map-marker" aria-hidden="true"></i>
+                <h3 class="contacts__text">Московская обл. г.Москва</h3>
+            </div>
+            <div class="block__contacts"><i class="contacts fa fa-envelope" aria-hidden="true"></i>
+                <h3 class="contacts__text">Info@stroika.ru</h3>
+            </div>
+        </div>
     </div>
+    <div id="map">
+        <script>
+            function initMap() {
+                var uluru = { lat: 55.7518193, lng: 37.5469477 };
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 4, center: uluru });
+                var marker = new google.maps.Marker({ position: uluru, map: map });
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Hnu1fXysC4eHBYSMedS4mFjxao6vOFQ&callback=initMap">
+            </script>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer__left">
+                <img class="header__logo_footer" src="img/cranFooter.png" alt="logo">
+                <h2 class="header__title_footer">Granit<p class="header__underTitle_footer">Доставка нерудных материалов
+                    </p>
+                </h2>
+            </div>
+            <div class="footer__right">
+                <h2 class="header__phone_footer">8 800 342-13-33<p class="header__underPhone_footer">Бесплатный звонок по России</p>
+                </h2>
+                <button class="header__button_footer">Обратный звонок</button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
